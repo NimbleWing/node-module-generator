@@ -40,5 +40,9 @@
     "commitizen": {
       "path": "cz-conventional-changelog"
     }
+  },
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "figlet": "^1.5.0"
   }
 }
