@@ -1,5 +1,5 @@
 {
-  "name": "node-module-generator",
+  "name": "@nwing/node-module-generator",
   "version": "1.0.0",
   "description": "Generate a practical skeleton/boilerplate for a new Node.js module.",
   "main": "index.js",
