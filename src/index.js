@@ -27,6 +27,11 @@ async function rewritePackageFile($githubName, $moduleName) {
   pkgData.homepage = `https://github.com/${$githubName}/${$moduleName}#readme`;
   Fs.writeFileSync('./package.json', JSON.stringify(pkgData, null, 2));
 }
+async function rewriteReleaseConfig($githubName, $moduleName) {
+  const rcData = JSON.parse(Fs.readFileSync('./.releaserc.json'));
+  rcData.repositoryUrl = `https://github.com/${$githubName}/${$moduleName}`;
+  Fs.writeFileSync('./.releaserc.json', JSON.stringify(rcData, null, 2));
+}
 (async () => {
   try {
     const questions = [
@@ -45,7 +50,12 @@ async function rewritePackageFile($githubName, $moduleName) {
     logWithSpinner('Loading template');
     await loadTemplate('./');
     stopSpinner();
+    logWithSpinner('Update package.json');
     await rewritePackageFile(answers.githubName, answers.nodeModuleName);
+    stopSpinner();
+    logWithSpinner('Update .releaserc.json');
+    await rewriteReleaseConfig(answers.githubName, answers.nodeModuleName);
+    stopSpinner();
   } catch (error) {
     failSpinner('Load template failed');
     console.log(error);
