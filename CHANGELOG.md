@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/NimbleWing/node-module-generator/compare/v1.1.0...v1.1.1) (2020-11-26)
+
+
+### Bug Fixes
+
+* update field to package.json ([c09d95b](https://github.com/NimbleWing/node-module-generator/commit/c09d95b9bce1630a99913ef7399a31a8ea412df3))
+
 # [1.1.0](https://github.com/NimbleWing/node-module-generator/compare/v1.0.0...v1.1.0) (2020-11-26)
 
 
