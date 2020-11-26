@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/NimbleWing/node-module-generator/compare/v1.0.0...v1.1.0) (2020-11-26)
+
+
+### Features
+
+* load template from github ([5f20175](https://github.com/NimbleWing/node-module-generator/commit/5f2017520179d93012729256a158756212c4fea0))
+
 # 1.0.0 (2020-11-24)
 
 
