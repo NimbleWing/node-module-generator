@@ -54,6 +54,7 @@
     }
   },
   "dependencies": {
+    "@babel/runtime": "^7.12.5",
     "chalk": "^4.1.0",
     "download-github-repo": "^0.1.4",
     "figlet": "^1.5.0",
