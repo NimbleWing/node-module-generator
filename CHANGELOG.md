@@ -1,3 +1,11 @@
+## [1.1.3](https://github.com/NimbleWing/node-module-generator/compare/v1.1.2...v1.1.3) (2020-12-04)
+
+
+### Bug Fixes
+
+* many fix ([ebfe653](https://github.com/NimbleWing/node-module-generator/commit/ebfe6539ada48f8266d86f22ffb3b82333615229))
+* **package:** add @babel/runtime dependency ([ef65b8a](https://github.com/NimbleWing/node-module-generator/commit/ef65b8ae74897cea9197cf62a68a3792aadbce56))
+
 ## [1.1.2](https://github.com/NimbleWing/node-module-generator/compare/v1.1.1...v1.1.2) (2020-11-26)
 
 
