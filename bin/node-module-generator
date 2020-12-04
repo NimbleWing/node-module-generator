@@ -1,3 +1,7 @@
 #!/usr/bin/env node
 
-require('../dist');
+require('../dist/cli.js').default()
+  .then(() => {
+  })
+  .catch(() => {
+  });
